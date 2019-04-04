@@ -74,4 +74,35 @@
   
   I suspect there are simple reasons for all this; mainly that Apple expects (undoubtedly, correctly) that most devs using collection/table views will fill them with simple arrangements of objects (whose data sources are pulled from a cloud bucket), where only a few items can (and should) be shown at once. Like the Photos app, or Youtube. Whereas, applications more akin to desktop Excel, that let users toggle between multiple large arrangements of data or items (read: apps for power-users), are rarer.  Of course... these are the applications that necessitate expansion of their underlying classes to encompass the most general blueprints of ''collections'' of objects.  Which begs the perennial question, that I see Apple increasingly struggling with
     — do you design with power users in mind? Or just mainstream consumers?
- */
+  
+  
+  
+  
+  
+  
+  
+                                        NEAR-FUTURE updates
+  
+    [features]
+  
+    cell borders init bool (*on layout or cv itself (where it's called) though? pick whichever seems more intuitive for user)
+  
+  
+  
+    [performance]
+  
+    try to eliminate every single extraneous call to layout's prepare()
+  
+  
+  
+    [ui]
+  
+    make background colours (ie navy blue) brighter?
+  
+  
+  
+    [ux]
+  
+    more descriptive comments for developers
+                                                */
+ 

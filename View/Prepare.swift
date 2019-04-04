@@ -41,7 +41,7 @@ extension CCVFlowLayout {
         let autoFitHeight = CGFloat(Double(globalKeyWindow.frame.height) - navBarHeight - statusBarHeight) / CGFloat(minorElements) - vSpace
 
         switch cellDimensionsMode {
-            
+        
         case .widthAndHeightHardcoded:
             cellWd = cellWidth!;            cellHt = cellHeight!
             
@@ -53,6 +53,18 @@ extension CCVFlowLayout {
             
         case .neitherHardcoded:
             cellWd = autofitWidth;          cellHt = autoFitHeight
+        }
+        
+        switch squareCellMode {
+            
+        case .autoSquareWidthFromHeight:
+            cellWd = cellHt
+            
+        case .autoSquareHeightFromWidth:
+            cellHt = cellWd
+            
+        case .noAutoSquare:
+            break
         }
     }
 }

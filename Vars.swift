@@ -10,14 +10,17 @@ var navController: UINavigationController? = UINavigationController()
 
 
 var cellGap = CGFloat(0)                // if nonzero, do NOT make this smaller than: 0.5 (iphone7), or else lines drawn inconsistently
-var testSize : CGFloat? = CGFloat(80)   // = nil (ie, cell width and/or height = nil) makes a collection view's cells auto-fit the screen (no scrolling)
-var testNum = 24                        // only for testing, in the below 2 vars
+var testNum = 24                        // only for testing, in the below vars
 
 
 
-var vcLayoutOne = CCVFlowLayout(rows: 7, cols: 5, lockedTopHeaders: 0, lockedLeftHeaders: 0, cellWidth: nil, cellHeight: nil, hSpace: cellGap, vSpace: cellGap, loadsHorizontal: true)
+var vcLayoutOne = CCVFlowLayout(rows: 7, cols: 5, lockedTopHeaders: 0, lockedLeftHeaders: 0,
+                                cellWidth: nil, cellHeight: nil, hSpace: cellGap, vSpace: cellGap, loadsHorizontal: false,
+                                squareCellMode: .autoSquareWidthFromHeight)
 
-var vcLayoutTwo = CCVFlowLayout(rows: testNum, cols: testNum, lockedTopHeaders: 1, lockedLeftHeaders: 1, cellWidth: testSize, cellHeight: testSize, hSpace: cellGap, vSpace: cellGap, loadsHorizontal: true)
+var vcLayoutTwo = CCVFlowLayout(rows: testNum, cols: testNum, lockedTopHeaders: 1, lockedLeftHeaders: 1,
+                                cellWidth: 60, cellHeight: 40, hSpace: cellGap, vSpace: cellGap, loadsHorizontal: true,
+                                squareCellMode: .autoSquareHeightFromWidth)  // *why no autocomplete for enum cases? need make enum global?
 
 var viewControllerOne = CollectionVC(headerTitle: "Collection View 1", colourIndex: 0, collectionViewLayout: vcLayoutOne)
 var viewControllerTwo = CollectionVC(headerTitle: "Collection View 2", colourIndex: 1, collectionViewLayout: vcLayoutTwo)

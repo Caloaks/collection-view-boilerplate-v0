@@ -14,15 +14,15 @@ class CCVFlowLayout : UICollectionViewFlowLayout {// stands for "Custom Collecti
     var cols = 0;                           var rows = 0;                   var lockedTopHeaders = 0;               var lockedLeftHeaders = 0
     var majorElements = 0;                  var minorElements = 0
     
-    var loadsHorizontal = false
-    var squareCells = false;                var cellDimensionsMode = CellDimensionsMode.neitherHardcoded
+    var loadsHorizontal = false;            var cellDimensionsMode = CellDimensionsMode.neitherHardcoded
+    var squareCells = false;                var squareCellMode = SquareCellMode.noAutoSquare
     
-    init(rows: Int, cols: Int, lockedTopHeaders: Int, lockedLeftHeaders: Int, cellWidth: CGFloat?, cellHeight: CGFloat?, hSpace: CGFloat, vSpace: CGFloat, loadsHorizontal: Bool) {
+    init(rows: Int, cols: Int, lockedTopHeaders: Int, lockedLeftHeaders: Int, cellWidth: CGFloat?, cellHeight: CGFloat?, hSpace: CGFloat, vSpace: CGFloat, loadsHorizontal: Bool, squareCellMode: SquareCellMode) {
         
         self.hSpace = hSpace;                       self.vSpace = vSpace
         self.rows = rows;                           self.cols = cols
         self.lockedTopHeaders = lockedTopHeaders;   self.lockedLeftHeaders = lockedLeftHeaders
-        self.loadsHorizontal = loadsHorizontal
+        self.loadsHorizontal = loadsHorizontal;     self.squareCellMode = squareCellMode
         super.init()
         
         self.cellWidth = cellWidth;     self.cellHeight = cellHeight
@@ -44,7 +44,9 @@ class CCVFlowLayout : UICollectionViewFlowLayout {// stands for "Custom Collecti
         }
             
         else {print("error with cell width and/or height initialization  cell width \(String(describing: cellWidth))  cell height \(String(describing: cellHeight))\n")}
+        
         print(cellDimensionsMode.simpleDescription())
+        print(squareCellMode.simpleDescription())
         
         calculateSizes()
         self.cellWidth = cellWd;   self.cellHeight = cellHt

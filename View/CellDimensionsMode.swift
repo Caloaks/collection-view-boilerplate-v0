@@ -22,4 +22,19 @@ extension CCVFlowLayout { // although this may be useful to call from the collec
             }
         }
     }
+    
+    enum SquareCellMode: Int {
+        case noAutoSquare = 0
+        case autoSquareHeightFromWidth, autoSquareWidthFromHeight
+        func simpleDescription() -> String {
+            switch self {
+            case .noAutoSquare:
+                return "cells are not auto-resized to be square"
+            case .autoSquareHeightFromWidth:
+                return "cell height is auto-resized to equal cell width"
+            case .autoSquareWidthFromHeight:
+                return "cell width is auto-resized to equal cell height"
+            }
+        }
+    }
 }
