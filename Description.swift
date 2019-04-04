@@ -39,6 +39,7 @@
   Over time, with practical use.  I will fork this repo to create a small set of applications: a calendar
                                                                                                a timetable
                                                                                                a video app pulling from an AWS S3 bucket
+                                                                                               a spreadsheet-like personal financial planning tool
                                                                                                a market tracking app for traders, with price tables & exchange API calls
                                                                                                a simple clone of the Excel / Numbers app (maybe later)
                                                                                                ... (**)
