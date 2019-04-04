@@ -31,6 +31,7 @@
 		06269A322255359C00D7E48B /* PortraitOrLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A2F2255359C00D7E48B /* PortraitOrLandscape.swift */; };
 		06269A332255359C00D7E48B /* DeviceTypeCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A302255359C00D7E48B /* DeviceTypeCheck.swift */; };
 		06269A35225535C500D7E48B /* Vars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A34225535C400D7E48B /* Vars.swift */; };
+		06C1B8852255C48600B13C36 /* CellDimensionsMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C1B8842255C48600B13C36 /* CellDimensionsMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		06269A2F2255359C00D7E48B /* PortraitOrLandscape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitOrLandscape.swift; sourceTree = "<group>"; };
 		06269A302255359C00D7E48B /* DeviceTypeCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTypeCheck.swift; sourceTree = "<group>"; };
 		06269A34225535C400D7E48B /* Vars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vars.swift; sourceTree = "<group>"; };
+		06C1B8842255C48600B13C36 /* CellDimensionsMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDimensionsMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				06269A242255356D00D7E48B /* Prepare.swift */,
 				06269A212255356D00D7E48B /* Attributes.swift */,
 				06269A222255356D00D7E48B /* ZIndex.swift */,
+				06C1B8842255C48600B13C36 /* CellDimensionsMode.swift */,
 				06269A202255356D00D7E48B /* Colours.swift */,
 			);
 			path = View;
@@ -268,6 +271,7 @@
 				06269A072255349200D7E48B /* LaunchOrientation.swift in Sources */,
 				06269A262255356D00D7E48B /* Reloads.swift in Sources */,
 				06269A292255356D00D7E48B /* Attributes.swift in Sources */,
+				06C1B8852255C48600B13C36 /* CellDimensionsMode.swift in Sources */,
 				06269A152255353100D7E48B /* CellColours.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

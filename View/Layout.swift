@@ -13,8 +13,8 @@ class CCVFlowLayout : UICollectionViewFlowLayout {// stands for "Custom Collecti
     
     var cols = 0;                           var rows = 0;                   var lockedTopHeaders = 0;               var lockedLeftHeaders = 0
     var majorElements = 0;                  var minorElements = 0
-    var loadsHorizontal = false
-    var widthAndHeightHardcoded = false;    var widthHardcoded = false;     var heightHardcoded = false;            var neitherHardcoded = false
+    
+    var loadsHorizontal = false;            var cellDimensionsMode = CellDimensionsMode.neitherHardcoded
     
     init(rows: Int, cols: Int, lockedTopHeaders: Int, lockedLeftHeaders: Int, cellWidth: CGFloat?, cellHeight: CGFloat?, hSpace: CGFloat, vSpace: CGFloat, loadsHorizontal: Bool) {
         
@@ -27,22 +27,23 @@ class CCVFlowLayout : UICollectionViewFlowLayout {// stands for "Custom Collecti
         self.cellWidth = cellWidth;     self.cellHeight = cellHeight
         
         if cellWidth != nil && cellHeight != nil {
-            widthAndHeightHardcoded = true
+            cellDimensionsMode = .widthAndHeightHardcoded
         }
             
         else if cellWidth == nil && cellHeight != nil {
-            heightHardcoded = true
+            cellDimensionsMode = .heightHardcoded
         }
             
         else if cellWidth != nil && cellHeight == nil {
-            widthHardcoded = true
+            cellDimensionsMode = .widthHardcoded
         }
             
         else if cellWidth == nil && cellHeight == nil {
-            neitherHardcoded = true
+            cellDimensionsMode = .neitherHardcoded
         }
             
         else {print("error with cell width and/or height initialization  cell width \(String(describing: cellWidth))  cell height \(String(describing: cellHeight))\n")}
+        print(cellDimensionsMode.simpleDescription())
         
         calculateSizes()
         self.cellWidth = cellWd;   self.cellHeight = cellHt

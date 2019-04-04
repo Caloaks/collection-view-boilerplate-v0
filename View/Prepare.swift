@@ -6,7 +6,7 @@ import UIKit
 
 extension CCVFlowLayout {
     
-    override func prepare() {                   //print("---------------------prepare cv \(currentTopVC.navBarTitle.substring(fromIndex: 16))")
+    override func prepare() {                   print("---------------------prepare cv \(currentTopVC.navBarTitle.substring(fromIndex: 16))")
         calculateSizes()
         cellWidth = cellWd;                     cellHeight = cellHt
         widthPlusSpace = cellWidth! + hSpace;   heightPlusSpace = cellHeight! + vSpace
@@ -39,17 +39,19 @@ extension CCVFlowLayout {
         
         let calcWid = CGFloat(Double(globalKeyWindow.frame.width) - 0.5) / CGFloat(majorElements) - hSpace
         let calcHei = CGFloat(Double(globalKeyWindow.frame.height) - navBarHeight - statusBarHeight) / CGFloat(minorElements) - vSpace
-        
-        if widthAndHeightHardcoded {                                                        //print("💎")
+
+        switch cellDimensionsMode {
+            
+        case .widthAndHeightHardcoded:
             cellWd = cellWidth!;       cellHt = cellHeight!
-        }
-        else if heightHardcoded {
+            
+        case .heightHardcoded:
             cellWd = calcWid;          cellHt = cellHeight!
-        }
-        else if widthHardcoded {
+            
+        case .widthHardcoded:
             cellWd = cellWidth!;       cellHt = calcHei
-        }
-        else {                                                                              //print("☁️")
+            
+        case .neitherHardcoded:
             cellWd = calcWid;          cellHt = calcHei
         }
     }
