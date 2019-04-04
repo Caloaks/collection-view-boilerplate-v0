@@ -14,7 +14,8 @@ class CCVFlowLayout : UICollectionViewFlowLayout {// stands for "Custom Collecti
     var cols = 0;                           var rows = 0;                   var lockedTopHeaders = 0;               var lockedLeftHeaders = 0
     var majorElements = 0;                  var minorElements = 0
     
-    var loadsHorizontal = false;            var cellDimensionsMode = CellDimensionsMode.neitherHardcoded
+    var loadsHorizontal = false
+    var squareCells = false;                var cellDimensionsMode = CellDimensionsMode.neitherHardcoded
     
     init(rows: Int, cols: Int, lockedTopHeaders: Int, lockedLeftHeaders: Int, cellWidth: CGFloat?, cellHeight: CGFloat?, hSpace: CGFloat, vSpace: CGFloat, loadsHorizontal: Bool) {
         

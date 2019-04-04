@@ -37,22 +37,22 @@ extension CCVFlowLayout {
         else {               majorElements = rows; minorElements = cols                     //; print("cells should load horizontally")
         }
         
-        let calcWid = CGFloat(Double(globalKeyWindow.frame.width) - 0.5) / CGFloat(majorElements) - hSpace
-        let calcHei = CGFloat(Double(globalKeyWindow.frame.height) - navBarHeight - statusBarHeight) / CGFloat(minorElements) - vSpace
+        let autofitWidth = CGFloat(Double(globalKeyWindow.frame.width) - 0.5) / CGFloat(majorElements) - hSpace
+        let autoFitHeight = CGFloat(Double(globalKeyWindow.frame.height) - navBarHeight - statusBarHeight) / CGFloat(minorElements) - vSpace
 
         switch cellDimensionsMode {
             
         case .widthAndHeightHardcoded:
-            cellWd = cellWidth!;       cellHt = cellHeight!
+            cellWd = cellWidth!;            cellHt = cellHeight!
             
         case .heightHardcoded:
-            cellWd = calcWid;          cellHt = cellHeight!
+            cellWd = autofitWidth;          cellHt = cellHeight!
             
         case .widthHardcoded:
-            cellWd = cellWidth!;       cellHt = calcHei
+            cellWd = cellWidth!;            cellHt = autoFitHeight
             
         case .neitherHardcoded:
-            cellWd = calcWid;          cellHt = calcHei
+            cellWd = autofitWidth;          cellHt = autoFitHeight
         }
     }
 }
