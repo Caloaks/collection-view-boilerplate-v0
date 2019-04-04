@@ -130,9 +130,8 @@
 		06269A0F2255353100D7E48B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				06269A102255353100D7E48B /* CellColours.swift */,
-				06269A112255353100D7E48B /* SetTopVC.swift */,
 				06269A122255353100D7E48B /* CollectionVC.swift */,
+				06269A102255353100D7E48B /* CellColours.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,6 +150,7 @@
 				06269A1C2255356C00D7E48B /* NavBarSetup.swift */,
 				06269A1D2255356C00D7E48B /* Reloads.swift */,
 				06269A1E2255356C00D7E48B /* GoTos.swift */,
+				06269A112255353100D7E48B /* SetTopVC.swift */,
 			);
 			path = "Controller(Navigation)";
 			sourceTree = "<group>";

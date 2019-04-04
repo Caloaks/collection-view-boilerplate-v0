@@ -49,9 +49,20 @@ extension CollectionVC {
     
     func setupAndPresent(vc: CollectionVC) {
         setupViewTitle(titleText: "", numLines: 1, alignment: .left)
-        navController?.dismiss(animated: false, completion: nil)
         
-        let newVC = UINavigationController(rootViewController: vc)
-        navController?.present(newVC, animated: false, completion: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            self.dismissNavController {
+                let newVC = UINavigationController(rootViewController: vc)
+                navController?.present(newVC, animated: false, completion: nil)
+            }
+        }
+        
+    }
+    
+    func dismissNavController(completion: @escaping () -> ()) {
+        //DispatchQueue.main.asyncAfter(deadline: .now()) {
+        navController?.dismiss(animated: false, completion: nil)
+        completion()
+        //}
     }
 }
