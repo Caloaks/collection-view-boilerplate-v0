@@ -1,6 +1,6 @@
 //  Vars.swift
-//  The 'Ultimate' Collection View Boilerplate
-//  Created by Garth Snyder on 2019-02-07.  //  Copyright © 2019 Garth Snyder. All rights reserved.
+//  D-M-Y-Tabs-Calendar
+//  Created by Garth Snyder on 2019-04-04.  //  Copyright © 2019 Garth Snyder. All rights reserved.
 
 import UIKit
 
@@ -15,7 +15,7 @@ var testNum = 24                        // only for testing, in the below 2 vars
 
 
 
-var vcLayoutOne = CCVFlowLayout(rows: testNum, cols: 8, lockedTopHeaders: 1, lockedLeftHeaders: 1, cellWidth: nil, cellHeight: nil, hSpace: cellGap, vSpace: cellGap, loadsHorizontal: false)
+var vcLayoutOne = CCVFlowLayout(rows: 7, cols: 5, lockedTopHeaders: 0, lockedLeftHeaders: 0, cellWidth: nil, cellHeight: nil, hSpace: cellGap, vSpace: cellGap, loadsHorizontal: true)
 
 var vcLayoutTwo = CCVFlowLayout(rows: testNum, cols: testNum, lockedTopHeaders: 1, lockedLeftHeaders: 1, cellWidth: testSize, cellHeight: testSize, hSpace: cellGap, vSpace: cellGap, loadsHorizontal: true)
 

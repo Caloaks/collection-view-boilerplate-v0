@@ -158,11 +158,11 @@
 		06269A1F2255356D00D7E48B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				06269A202255356D00D7E48B /* Colours.swift */,
-				06269A212255356D00D7E48B /* Attributes.swift */,
-				06269A222255356D00D7E48B /* ZIndex.swift */,
 				06269A232255356D00D7E48B /* Layout.swift */,
 				06269A242255356D00D7E48B /* Prepare.swift */,
+				06269A212255356D00D7E48B /* Attributes.swift */,
+				06269A222255356D00D7E48B /* ZIndex.swift */,
+				06269A202255356D00D7E48B /* Colours.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
