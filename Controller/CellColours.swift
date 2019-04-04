@@ -12,16 +12,30 @@ extension CollectionVC {
         
         let row = indexPath.row; let column = indexPath.section
         
-        if row < downcastLayout!.lockedTopHeaders || column < downcastLayout!.lockedLeftHeaders {
+        let customLayout = downcastLayout!
+        
+        if row < customLayout.lockedTopHeaders || column < customLayout.lockedLeftHeaders {
             cell.backgroundColor = headerColour
         }
         else {
-            if row % 2 != 0 {
-                cell.backgroundColor = grayTwo
+            
+            if customLayout.squareCellMode == .noAutoSquare {
+                if row % 2 != 0 {
+                    cell.backgroundColor = grayTwo
+                }
+                else {
+                    cell.backgroundColor = cellDefaultColour
+                }
             }
             else {
-                cell.backgroundColor = cellDefaultColour
+                if row % 2 != 0 || column % 2 != 0 {
+                    cell.backgroundColor = grayTwo
+                }
+                else {
+                    cell.backgroundColor = cellDefaultColour
+                }
             }
+            
         }
     }
 }
