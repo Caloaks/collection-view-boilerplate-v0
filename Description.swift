@@ -85,7 +85,7 @@
   
     [features]
   
-    cell borders init bool (*on layout or cv itself (where it's called) though? pick whichever seems more intuitive for user)
+    cell borders & cornerRadius init bool (*on layout or cv itself (where it's called) though? pick whichever seems more intuitive for user)
   
   
   
