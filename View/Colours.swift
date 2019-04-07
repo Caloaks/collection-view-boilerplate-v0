@@ -6,35 +6,35 @@ import UIKit
 
 
 extension UIColor {
-    static func rgb(_ red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor {
-        return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: alpha)
+    static func COOOKIE(_ r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) -> UIColor {
+        return UIColor(red: r/255, green: g/255, blue: b/255, alpha: a)
     }
 }
 
 
-let num = CGFloat(42)
-var headerColour = UIColor.rgb(num, green: num, blue: num, alpha: 1) //UIColor.darkGray
+let NUM = CGFloat(42)
+var headerColour = UIColor.COOOKIE(NUM, g: NUM, b: NUM, a: 1) // https://www.youtube.com/watch?v=_OKGUAbpj5k
 var cellDefaultColour = navyBlue
 
 
 var randomColours = [UIColor.red.cgColor, UIColor.orange.cgColor, UIColor.yellow.cgColor, UIColor.green.cgColor, UIColor.blue.cgColor, UIColor.purple.cgColor, UIColor.white.cgColor]
 
 
-var grayPointZeroFive = UIColor.rgb(0, green: 0, blue: 0, alpha: 0.03)
-var grayOne = UIColor.rgb(0, green: 0, blue: 0, alpha: 0.1)
-var grayTwo = UIColor.rgb(0, green: 0, blue: 0, alpha: 0.2)
-var graySeven = UIColor.rgb(0, green: 0, blue: 0, alpha: 0.7)
+var grayPointZeroFive = UIColor.COOOKIE(0, g: 0, b: 0, a: 0.03)
+var grayOne = UIColor.COOOKIE(0, g: 0, b: 0, a: 0.1)
+var grayTwo = UIColor.COOOKIE(0, g: 0, b: 0, a: 0.2)
+var graySeven = UIColor.COOOKIE(0, g: 0, b: 0, a: 0.7)
 
 
-var platinum = UIColor.rgb(214, green: 214, blue: 214, alpha: 1)
-var platinumMedium = UIColor.rgb(214, green: 214, blue: 255, alpha: 0.8)
-var platinumUltraLite = UIColor.rgb(214, green: 214, blue: 255, alpha: 0.45)
-var platinumBarelyThere = UIColor.rgb(214, green: 214, blue: 255, alpha: 0.1)
+var platinum = UIColor.COOOKIE(214, g: 214, b: 214, a: 1)
+var platinumMedium = UIColor.COOOKIE(214, g: 214, b: 255, a: 0.8)
+var platinumUltraLite = UIColor.COOOKIE(214, g: 214, b: 255, a: 0.45)
+var platinumBarelyThere = UIColor.COOOKIE(214, g: 214, b: 255, a: 0.1)
 
 
-var icyBlue = UIColor.rgb(150, green: 180, blue: 220, alpha: 1)
-var darkerIcyBlue = UIColor.rgb(100, green: 140, blue: 200, alpha: 1)
-var navyBlue = UIColor.rgb(0, green: 36, blue: 82, alpha: 1)    //(30, green: 40, blue: 160, alpha: 1)
+var icyBlue = UIColor.COOOKIE(150, g: 180, b: 220, a: 1)
+var darkerIcyBlue = UIColor.COOOKIE(100, g: 140, b: 200, a: 1)
+var navyBlue = UIColor.COOOKIE(0, g: 36, b: 82, a: 1)    //(30, green: 40, blue: 160, alpha: 1)
 
 
 var skyBackgroundImage = UIImage(named: "skyB")?.withRenderingMode(.alwaysOriginal)
