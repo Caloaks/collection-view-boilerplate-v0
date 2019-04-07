@@ -23,7 +23,6 @@ extension UIViewController {
             else {print("...could not cast vc within check of vc subclass")}
         }
     }
-    
 }
 
 

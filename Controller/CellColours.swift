@@ -35,7 +35,6 @@ extension CollectionVC {
                     cell.backgroundColor = cellDefaultColour
                 }
             }
-            
         }
     }
 }

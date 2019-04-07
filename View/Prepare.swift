@@ -20,7 +20,6 @@ extension CCVFlowLayout {
         xOffSet = collectionView!.contentOffset.x
         
         checkOrientation()
-        
         print("---------------------prepare cv \(currentTopVC.navBarTitle.substring(fromIndex: 16))  cell width: \(cellWidth!)  nav bar height: \(navBarHeight)")
         
         if previousOrientation != currentOrientation  {
@@ -57,17 +56,7 @@ extension CCVFlowLayout {
             cellWd = autofitWidth;          cellHt = autoFitHeight
         }
         
-        switch squareCellMode {
-            
-        case .autoSquareWidthFromHeight:
-            cellWd = cellHt
-            
-        case .autoSquareHeightFromWidth:
-            cellHt = cellWd
-            
-        case .noAutoSquare:
-            break
-        }
+        resetDimensionIfSquareCellsOn()
     }
 }
 

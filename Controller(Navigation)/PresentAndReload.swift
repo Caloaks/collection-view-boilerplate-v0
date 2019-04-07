@@ -16,14 +16,12 @@ extension CollectionVC {
                 previousOrientation = currentOrientation
                 reloadCV(after: 0.02)
             }
-        }
-        else {
+        } else {
             previousOrientation = currentOrientation
             reloadCollectionView()  //should it have a time delay, as in the above completion block? (will test over time, with different devices)
 //            reloadCV(after: 0.02)
         }
     }
-    
     
     func gotoView(vc: CollectionVC) {                                                                       //print("\nshowing vc \(vc)")
         if currentTopVC != vc {
@@ -46,7 +44,6 @@ extension CollectionVC {
         completion()
     }
     
-    
     func setupAndPresent(vc: CollectionVC) {
         setupViewTitle(titleText: "", numLines: 1, alignment: .left)
         
@@ -56,13 +53,10 @@ extension CollectionVC {
                 navController?.present(newVC, animated: false, completion: nil)
             }
         }
-        
     }
     
     func dismissNavController(completion: @escaping () -> ()) {
-        //DispatchQueue.main.asyncAfter(deadline: .now()) {
         navController?.dismiss(animated: false, completion: nil)
         completion()
-        //}
     }
 }

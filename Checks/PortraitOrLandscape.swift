@@ -16,5 +16,4 @@ func checkOrientation() {
         currentOrientation = "landscape"
     }
     else {print("\n\nApparently, somehow, the global key window's frame's height & width are being evaluated as equal...")} //shouldn't ever get called
-    
 }

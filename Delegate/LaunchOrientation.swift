@@ -25,5 +25,4 @@ extension AppDelegate {
         currentOrientation = launchOrientation; previousOrientation = launchOrientation
         print("launched in \(launchOrientation)")
     }
-    
 }

@@ -9,8 +9,8 @@ var globalKeyWindow = UIApplication.shared.keyWindow!
 var navController: UINavigationController? = UINavigationController()
 
 
-var cellGap = CGFloat(0)                // if nonzero, do NOT make this smaller than: 0.5 (iphone7), or else lines drawn inconsistently
-var testNum = 24                        // only for testing, in the below vars
+var cellGap = CGFloat(0)        // if nonzero, do NOT make this smaller than: 0.5 (iphone7), or else lines drawn inconsistently
+var testNum = 24                // only for testing, in the below vars
 
 
 

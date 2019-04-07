@@ -6,7 +6,6 @@ import UIKit;   import UserNotifications
 
 extension CollectionVC {
     
-    
     func setupNotificationForStatusBarHeightChange() {                                                   
         if phones.contains(modelName) {
             let center = UNUserNotificationCenter.current()
@@ -27,7 +26,6 @@ extension CollectionVC {
             self.reloadCollectionView()
         }
     }
-    
 }
 
 
