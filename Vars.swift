@@ -30,7 +30,7 @@ var viewControllerTwo = CollectionVC(headerTitle: "Collection View 2", colourInd
 
 
 var currentTopVC : CollectionVC =
-    CollectionVC(headerTitle: "Collection View initial value", colourIndex: 0, collectionViewLayout: vcLayoutOne)// temporary value to satisfy initializer
+    CollectionVC(headerTitle: "Collection View initial value", colourIndex: 0, collectionViewLayout: vcLayoutOne) // temporary value to satisfy initializer
 var backgroundVC = UIViewController()
 
 

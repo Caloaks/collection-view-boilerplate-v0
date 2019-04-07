@@ -20,7 +20,7 @@ extension AppDelegate {
         }
         else {
             launchOrientation = " ?"
-            lastStatusBarHeight = 99 //*
+            lastStatusBarHeight = 99
         }
         currentOrientation = launchOrientation; previousOrientation = launchOrientation
         print("launched in \(launchOrientation)")
