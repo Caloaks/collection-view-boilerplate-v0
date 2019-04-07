@@ -150,9 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				06269A1C2255356C00D7E48B /* NavBarSetup.swift */,
+				06269A112255353100D7E48B /* SetTopVC.swift */,
 				06269A1D2255356C00D7E48B /* Reloads.swift */,
 				06269A1E2255356C00D7E48B /* PresentAndReload.swift */,
-				06269A112255353100D7E48B /* SetTopVC.swift */,
 			);
 			path = "Controller(Navigation)";
 			sourceTree = "<group>";

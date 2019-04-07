@@ -91,7 +91,7 @@
   
     [performance]
   
-    try to eliminate every single extraneous call to layout's prepare()
+    ...
   
   
   

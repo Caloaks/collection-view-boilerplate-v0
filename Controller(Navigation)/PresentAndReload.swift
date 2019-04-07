@@ -10,7 +10,8 @@ extension CollectionVC {
         
         if previousOrientation == "landscape" && currentOrientation == "portrait"
             || willPresentVCAgainBecauseAppJustEnteredForeground {
-            //print("\n---------------------presented then reloaded cv \(currentTopVC.navBarTitle.substring(fromIndex: 16))")
+            //print(substringWithAppends(input: vc.navBarTitle, preceding: "\n----------------------presented then reloaded cv ", following:  ""))
+            
             
             setupTitleAndPresentViewController(vc: vc) { () -> () in
                 previousOrientation = currentOrientation
@@ -35,7 +36,7 @@ extension CollectionVC {
                 //else {print("just did goto from portrait")}
             }
             
-        } else {print("you're already looking at view controller \(vc.navBarTitle.substring(fromIndex: 16))'s view")}
+        } else {print(substringWithAppends(input: vc.navBarTitle, preceding: "you're already looking at view controller ", following: "'s view"))}
     }
     
     

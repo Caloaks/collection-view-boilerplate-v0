@@ -32,12 +32,12 @@ class CollectionVC: UICollectionViewController {
         setupNotificationForStatusBarHeightChange()
         
         setTopViewController()
-        print("\ncv \(navBarTitle.substring(fromIndex: 16)) L")
+        print(substringWithAppends(input: navBarTitle, preceding: "\nview ", following:  " loaded"))
     }
     
     override func viewDidAppear(_ animated: Bool) {
         setTopViewController()
-        print("\ncv \(navBarTitle.substring(fromIndex: 16)) A")
+        print(substringWithAppends(input: navBarTitle, preceding: "\nview ", following:  " appeared"))
 
         setupViewTitle(titleText: navBarTitle, numLines: 1, alignment: .left)
         setupNavBarButtons(graySeven, atIndex: colourIndex)
