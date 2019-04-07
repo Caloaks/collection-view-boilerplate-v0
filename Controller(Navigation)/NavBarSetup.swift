@@ -21,7 +21,6 @@ extension CollectionVC {
         let navSelectorForVCOne = #selector(buttonWrapperMethodforVCOne)
         let navSelectorForVCTwo = #selector(ButtonWrapperMethodforVCTwo)
         let navSelectorForReloading = #selector(reloadCollectionView)
-        
         let buttonOne = setupButton(selector: navSelectorForVCOne, title: "timetableImage")
         let buttonTwo = setupButton(selector: navSelectorForVCTwo, title: "calendarImage")
         let reloadButton = setupButton(selector: navSelectorForReloading, title: "reloadButton")
@@ -47,15 +46,13 @@ extension CollectionVC {
         return button
     }
     
-    @objc func buttonWrapperMethodforVCOne() {
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            self.gotoView(vc: viewControllerOne)
-        }
-    }
+    @objc func buttonWrapperMethodforVCOne() {presentViaVCButton(vc: viewControllerOne)}
+    @objc func ButtonWrapperMethodforVCTwo() {presentViaVCButton(vc: viewControllerTwo)}
     
-    @objc func ButtonWrapperMethodforVCTwo() {
+    func presentViaVCButton(vc: CollectionVC) {
+        rePresentedVCFromButton = true
         DispatchQueue.main.asyncAfter(deadline: .now()) {
-            self.gotoView(vc: viewControllerTwo)
+            self.gotoView(vc: vc)
         }
     }
 }

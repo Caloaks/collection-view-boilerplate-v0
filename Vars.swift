@@ -49,4 +49,5 @@ var xOffSet = CGFloat(0);       var yOffSet = CGFloat(0)
 var statusBarHeight = 0.0;      var lastStatusBarHeight = 0.0
 var navBarHeight = 0.0;         var launchWidth = 0.0
 
+var rePresentedVCFromButton = false
 var willPresentVCAgainBecauseAppJustEnteredForeground = false

@@ -24,7 +24,6 @@ class CollectionVC: UICollectionViewController {
     override func numberOfSections(in collectionView: UICollectionView) -> Int {return downcastLayout!.rows}
     
     override func viewDidLoad() {
-        
         collectionView.backgroundColor = navyBlue
         collectionView.register(CustomCell.self, forCellWithReuseIdentifier: CustomCell.reuseIdentifier)
         collectionView.bounces = false
@@ -37,7 +36,10 @@ class CollectionVC: UICollectionViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         setTopViewController()
-        print(substringWithAppends(input: navBarTitle, preceding: "\nview ", following:  " appeared"))
+        
+        if rePresentedVCFromButton {
+            print(substringWithAppends(input: navBarTitle, preceding: "\nview ", following:  " appeared"))
+        }
 
         setupViewTitle(titleText: navBarTitle, numLines: 1, alignment: .left)
         setupNavBarButtons(graySeven, atIndex: colourIndex)
