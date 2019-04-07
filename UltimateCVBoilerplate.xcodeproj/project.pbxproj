@@ -21,7 +21,7 @@
 		06269A1A2255354500D7E48B /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A192255354500D7E48B /* Description.swift */; };
 		06269A252255356D00D7E48B /* NavBarSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A1C2255356C00D7E48B /* NavBarSetup.swift */; };
 		06269A262255356D00D7E48B /* Reloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A1D2255356C00D7E48B /* Reloads.swift */; };
-		06269A272255356D00D7E48B /* GoTos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A1E2255356C00D7E48B /* GoTos.swift */; };
+		06269A272255356D00D7E48B /* PresentAndReload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A1E2255356C00D7E48B /* PresentAndReload.swift */; };
 		06269A282255356D00D7E48B /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A202255356D00D7E48B /* Colours.swift */; };
 		06269A292255356D00D7E48B /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A212255356D00D7E48B /* Attributes.swift */; };
 		06269A2A2255356D00D7E48B /* ZIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A222255356D00D7E48B /* ZIndex.swift */; };
@@ -51,7 +51,7 @@
 		06269A192255354500D7E48B /* Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		06269A1C2255356C00D7E48B /* NavBarSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarSetup.swift; sourceTree = "<group>"; };
 		06269A1D2255356C00D7E48B /* Reloads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reloads.swift; sourceTree = "<group>"; };
-		06269A1E2255356C00D7E48B /* GoTos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoTos.swift; sourceTree = "<group>"; };
+		06269A1E2255356C00D7E48B /* PresentAndReload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAndReload.swift; sourceTree = "<group>"; };
 		06269A202255356D00D7E48B /* Colours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
 		06269A212255356D00D7E48B /* Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attributes.swift; sourceTree = "<group>"; };
 		06269A222255356D00D7E48B /* ZIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZIndex.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 			children = (
 				06269A1C2255356C00D7E48B /* NavBarSetup.swift */,
 				06269A1D2255356C00D7E48B /* Reloads.swift */,
-				06269A1E2255356C00D7E48B /* GoTos.swift */,
+				06269A1E2255356C00D7E48B /* PresentAndReload.swift */,
 				06269A112255353100D7E48B /* SetTopVC.swift */,
 			);
 			path = "Controller(Navigation)";
@@ -260,7 +260,7 @@
 				06269A35225535C500D7E48B /* Vars.swift in Sources */,
 				06269A172255353100D7E48B /* CollectionVC.swift in Sources */,
 				06269A332255359C00D7E48B /* DeviceTypeCheck.swift in Sources */,
-				06269A272255356D00D7E48B /* GoTos.swift in Sources */,
+				06269A272255356D00D7E48B /* PresentAndReload.swift in Sources */,
 				06269A322255359C00D7E48B /* PortraitOrLandscape.swift in Sources */,
 				06269A0E2255351400D7E48B /* StringMethods.swift in Sources */,
 				06269A182255353100D7E48B /* Attributes(alternate).swift in Sources */,
