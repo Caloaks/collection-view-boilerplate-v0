@@ -14,14 +14,14 @@ var testNum = 24                // only for testing, in the below vars
 
 
 
-var vcLayoutOne = CCVFlowLayout(rows: 5, cols: 7, lockedHeaderRows: 1, lockedHeaderSections: 1,
+var vcLayoutOne = CCVFlowLayout(rows: 5, cols: 6, lockedHeaderRows: 1, lockedHeaderSections: 1, //note, if loadsHorizontal is true, 'rows' look like columns
                                 cellWidth: nil, cellHeight: nil, hSpace: cellGap, vSpace: cellGap,
                                 loadsHorizontal: false,
                                 squareCellMode: .noAutoSquare)
 
-var vcLayoutTwo = CCVFlowLayout(rows: testNum, cols: testNum, lockedHeaderRows: 1, lockedHeaderSections: 1,
-                                cellWidth: 60, cellHeight: 40, hSpace: cellGap, vSpace: cellGap,
-                                loadsHorizontal: false,
+var vcLayoutTwo = CCVFlowLayout(rows: 6, cols: 5, lockedHeaderRows: 1, lockedHeaderSections: 1,
+                                cellWidth: nil, cellHeight: nil, hSpace: cellGap, vSpace: cellGap,
+                                loadsHorizontal: true,
                                 squareCellMode: .noAutoSquare)  // *why no autocomplete for enum cases? need make enum global?
 
 var viewControllerOne = CollectionVC(headerTitle: "Collection View 1", colourIndex: 0, collectionViewLayout: vcLayoutOne)

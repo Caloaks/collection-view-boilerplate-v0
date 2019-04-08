@@ -8,11 +8,17 @@ extension CollectionVC {
     
     func setCellColours (cell: CustomCell, indexPath: IndexPath) {
         
-        cell.titleLabel.textColor = .white //platinumMedium
-        
-        let row = indexPath.row; let column = indexPath.section
-        
+        var row = 0; var column = 0
         let customLayout = downcastLayout!
+        
+//        if !customLayout.loadsHorizontal {                    // keep lines 14 & 16-19 commented if you want cell colour pattern to vary *with the rows*
+             row = indexPath.item; column = indexPath.section
+//        }
+//        else {
+//             row = indexPath.section; column = indexPath.item
+//        }
+        
+        cell.titleLabel.textColor = .white //platinumMedium
         
         if row < customLayout.lockedHeaderRows || column < customLayout.lockedHeaderSections {
             cell.backgroundColor = headerColour
