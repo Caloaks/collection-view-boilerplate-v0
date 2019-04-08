@@ -34,7 +34,8 @@ var platinumBarelyThere = UIColor.COOOKIE(214, g: 214, b: 255, a: 0.1)
 
 var icyBlue = UIColor.COOOKIE(150, g: 180, b: 220, a: 1)
 var darkerIcyBlue = UIColor.COOOKIE(100, g: 140, b: 200, a: 1)
-var navyBlue = UIColor.COOOKIE(0, g: 36, b: 82, a: 1)    //(30, green: 40, blue: 160, alpha: 1)
+var navyBlue = UIColor.COOOKIE(0, g: 36, b: 82, a: 1)
+//(30, green: 40, blue: 160, alpha: 1) looked ok too
 
 
 var skyBackgroundImage = UIImage(named: "skyB")?.withRenderingMode(.alwaysOriginal)
