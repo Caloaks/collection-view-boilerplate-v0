@@ -20,7 +20,14 @@ class CCVFlowLayout : UICollectionViewFlowLayout {// stands for "Custom Collecti
     init(rows: Int, cols: Int, lockedHeaderRows: Int, lockedHeaderSections: Int, cellWidth: CGFloat?, cellHeight: CGFloat?, hSpace: CGFloat, vSpace: CGFloat, loadsHorizontal: Bool, squareCellMode: SquareCellMode) {
         
         self.hSpace = hSpace;                       self.vSpace = vSpace
-        self.rows = rows;                           self.cols = cols
+        
+        if !loadsHorizontal {
+            self.rows = rows;                       self.cols = cols
+        }
+        else {
+            self.rows = cols;                       self.cols = rows
+        }
+        
         self.lockedHeaderRows = lockedHeaderRows;   self.lockedHeaderSections = lockedHeaderSections
         self.loadsHorizontal = loadsHorizontal;     self.squareCellMode = squareCellMode
         super.init()

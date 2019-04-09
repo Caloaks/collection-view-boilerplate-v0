@@ -4,7 +4,7 @@
 
 import UIKit
 
-class CollectionVC: UICollectionViewController {
+class CollectionVC: UICollectionViewController {            //let maxBetweenRowsAndCols = max(downcastLayout!.rows, downcastLayout!.cols)
     var navBarTitle: String = String("")
     var colourIndex: Int = Int()
     
@@ -19,41 +19,39 @@ class CollectionVC: UICollectionViewController {
     
     required init?(coder aDecoder: NSCoder) {fatalError("init(coder:) has not been implemented")}
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {return downcastLayout!.rows}
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        let val = (downcastLayout!.loadsHorizontal) ? downcastLayout!.cols : downcastLayout!.rows
+        return val
+    }
     
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {return downcastLayout!.cols}
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        let val = (downcastLayout!.loadsHorizontal) ? downcastLayout!.rows : downcastLayout!.cols
+        return val
+    }
     
     override func viewDidLoad() {
         collectionView.backgroundColor = navyBlue
         collectionView.register(CustomCell.self, forCellWithReuseIdentifier: CustomCell.reuseIdentifier)
         collectionView.bounces = false
-        
         setupNotificationForStatusBarHeightChange()
-        
         setTopViewController()
         print(substringWithAppends(input: navBarTitle, preceding: "\nview ", following:  " loaded"))
     }
     
     override func viewDidAppear(_ animated: Bool) {
         setTopViewController()
-        
         if rePresentedVCFromButton {
             print(substringWithAppends(input: navBarTitle, preceding: "\nview ", following:  " appeared"))
         }
-
         setupViewTitle(titleText: navBarTitle, numLines: 1, alignment: .left)
         setupNavBarButtons(graySeven, atIndex: colourIndex)
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCell.reuseIdentifier, for: indexPath) as! CustomCell
-        
         cell.titleLabel.text = "\(indexPath.section),\(indexPath.item)"
-        
         setCellColours(cell: cell, indexPath: indexPath)
-        
 //        print(indexPath)
-        
         return cell
     }
 }

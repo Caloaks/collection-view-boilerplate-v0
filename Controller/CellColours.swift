@@ -17,7 +17,7 @@ extension CollectionVC {
 //        else {
 //             row = indexPath.section; column = indexPath.item
 //        }
-        
+
         cell.titleLabel.textColor = .white //platinumMedium
         
         if row < customLayout.lockedHeaderRows || column < customLayout.lockedHeaderSections {
