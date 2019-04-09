@@ -21,7 +21,7 @@ var vcLayoutOne = CCVFlowLayout(rows: 24, cols: 12, lockedHeaderRows: 1, lockedH
 
 var vcLayoutTwo = CCVFlowLayout(rows: 8, cols: 24, lockedHeaderRows: 1, lockedHeaderSections: 1, // note, if loadsHorizontal is true, 'rows' look like columns
                                 cellWidth: 100, cellHeight: 80, hSpace: cellGap, vSpace: cellGap,
-                                loadsHorizontal: true,
+                                loadsHorizontal: false,
                                 squareCellMode: .noAutoSquare)
 
 var viewControllerOne = CollectionVC(headerTitle: "Collection View 1", colourIndex: 0, collectionViewLayout: vcLayoutOne)

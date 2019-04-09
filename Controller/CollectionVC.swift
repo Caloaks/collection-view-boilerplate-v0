@@ -20,13 +20,11 @@ class CollectionVC: UICollectionViewController {            //let maxBetweenRows
     required init?(coder aDecoder: NSCoder) {fatalError("init(coder:) has not been implemented")}
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let val = (downcastLayout!.loadsHorizontal) ? downcastLayout!.cols : downcastLayout!.rows
-        return val
+        return (downcastLayout!.loadsHorizontal) ? downcastLayout!.cols : downcastLayout!.rows
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        let val = (downcastLayout!.loadsHorizontal) ? downcastLayout!.rows : downcastLayout!.cols
-        return val
+        return (downcastLayout!.loadsHorizontal) ? downcastLayout!.rows : downcastLayout!.cols
     }
     
     override func viewDidLoad() {

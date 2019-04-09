@@ -12,13 +12,10 @@ class CCVFlowLayout : UICollectionViewFlowLayout {// stands for "Custom Collecti
     var contentSize = CGSize.zero
     
     var cols = 0;                           var rows = 0;                   var lockedHeaderRows = 0;               var lockedHeaderSections = 0
-    
     var loadsHorizontal = false;            var cellDimensionsMode = CellDimensionsMode.neitherHardcoded
     var squareCells = false;                var squareCellMode = SquareCellMode.noAutoSquare
     
     init(rows: Int, cols: Int, lockedHeaderRows: Int, lockedHeaderSections: Int, cellWidth: CGFloat?, cellHeight: CGFloat?, hSpace: CGFloat, vSpace: CGFloat, loadsHorizontal: Bool, squareCellMode: SquareCellMode) {
-        
-        self.hSpace = hSpace;                       self.vSpace = vSpace
         
         if !loadsHorizontal {
             self.rows = rows;                       self.cols = cols
@@ -28,10 +25,10 @@ class CCVFlowLayout : UICollectionViewFlowLayout {// stands for "Custom Collecti
         }
         
         self.lockedHeaderRows = lockedHeaderRows;   self.lockedHeaderSections = lockedHeaderSections
+        self.cellWidth = cellWidth;                 self.cellHeight = cellHeight
+        self.hSpace = hSpace;                       self.vSpace = vSpace
         self.loadsHorizontal = loadsHorizontal;     self.squareCellMode = squareCellMode
         super.init()
-        
-        self.cellWidth = cellWidth;     self.cellHeight = cellHeight
         
         if cellWidth != nil && cellHeight != nil    {cellDimensionsMode = .widthAndHeightHardcoded}
             
