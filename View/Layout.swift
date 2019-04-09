@@ -12,7 +12,6 @@ class CCVFlowLayout : UICollectionViewFlowLayout {// stands for "Custom Collecti
     var contentSize = CGSize.zero
     
     var cols = 0;                           var rows = 0;                   var lockedHeaderRows = 0;               var lockedHeaderSections = 0
-    var majorElements = 0;                  var minorElements = 0
     
     var loadsHorizontal = false;            var cellDimensionsMode = CellDimensionsMode.neitherHardcoded
     var squareCells = false;                var squareCellMode = SquareCellMode.noAutoSquare

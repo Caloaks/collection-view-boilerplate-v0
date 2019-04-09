@@ -32,11 +32,6 @@ extension CCVFlowLayout {
         statusBarHeight = Double(UIApplication.shared.statusBarFrame.size.height)           //; print("status bar: \(statusBarHeight)")
         navBarHeight = Double((navController?.navigationBar.frame.height)!)                 //; print("nav bar: \(navBarHeight)")
         
-//        if !loadsHorizontal {majorElements = cols; minorElements = rows                     //; print("should load vertically")
-//        }
-//        else {               majorElements = rows; minorElements = cols                     //; print("cells should load horizontally")
-//        }
-        
         let autofitWidth = CGFloat(Double(globalKeyWindow.frame.width) - 0.5) / CGFloat(cols) - hSpace
         let autoFitHeight = CGFloat(Double(globalKeyWindow.frame.height) - navBarHeight - statusBarHeight) / CGFloat(rows) - vSpace
 
