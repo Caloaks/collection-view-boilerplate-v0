@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		062699F92255341100D7E48B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062699F82255341100D7E48B /* Assets.xcassets */; };
 		062699FC2255341100D7E48B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062699FA2255341100D7E48B /* LaunchScreen.storyboard */; };
-		06269A072255349200D7E48B /* LaunchOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A042255349200D7E48B /* LaunchOrientation.swift */; };
+		06269A072255349200D7E48B /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A042255349200D7E48B /* Orientation.swift */; };
 		06269A082255349200D7E48B /* Lifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A052255349200D7E48B /* Lifecycle.swift */; };
 		06269A092255349200D7E48B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A062255349200D7E48B /* AppDelegate.swift */; };
 		06269A0D2255351400D7E48B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A0B2255351400D7E48B /* CustomCell.swift */; };
@@ -27,7 +27,6 @@
 		06269A2B2255356D00D7E48B /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A232255356D00D7E48B /* Layout.swift */; };
 		06269A2C2255356D00D7E48B /* Prepare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A242255356D00D7E48B /* Prepare.swift */; };
 		06269A312255359C00D7E48B /* TestSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A2E2255359C00D7E48B /* TestSquare.swift */; };
-		06269A322255359C00D7E48B /* Portrait||Landscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A2F2255359C00D7E48B /* Portrait||Landscape.swift */; };
 		06269A332255359C00D7E48B /* DeviceTypeCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A302255359C00D7E48B /* DeviceTypeCheck.swift */; };
 		06269A35225535C500D7E48B /* Vars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A34225535C400D7E48B /* Vars.swift */; };
 		06C1B8852255C48600B13C36 /* CellSizingModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C1B8842255C48600B13C36 /* CellSizingModes.swift */; };
@@ -38,7 +37,7 @@
 		062699F82255341100D7E48B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		062699FB2255341100D7E48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		062699FD2255341100D7E48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		06269A042255349200D7E48B /* LaunchOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchOrientation.swift; sourceTree = "<group>"; };
+		06269A042255349200D7E48B /* Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
 		06269A052255349200D7E48B /* Lifecycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lifecycle.swift; sourceTree = "<group>"; };
 		06269A062255349200D7E48B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06269A0B2255351400D7E48B /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -56,7 +55,6 @@
 		06269A232255356D00D7E48B /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		06269A242255356D00D7E48B /* Prepare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prepare.swift; sourceTree = "<group>"; };
 		06269A2E2255359C00D7E48B /* TestSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSquare.swift; sourceTree = "<group>"; };
-		06269A2F2255359C00D7E48B /* Portrait||Landscape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Portrait||Landscape.swift"; sourceTree = "<group>"; };
 		06269A302255359C00D7E48B /* DeviceTypeCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTypeCheck.swift; sourceTree = "<group>"; };
 		06269A34225535C400D7E48B /* Vars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vars.swift; sourceTree = "<group>"; };
 		06C1B8842255C48600B13C36 /* CellSizingModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSizingModes.swift; sourceTree = "<group>"; };
@@ -112,7 +110,7 @@
 			children = (
 				06269A062255349200D7E48B /* AppDelegate.swift */,
 				06269A052255349200D7E48B /* Lifecycle.swift */,
-				06269A042255349200D7E48B /* LaunchOrientation.swift */,
+				06269A042255349200D7E48B /* Orientation.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -163,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				06269A2E2255359C00D7E48B /* TestSquare.swift */,
-				06269A2F2255359C00D7E48B /* Portrait||Landscape.swift */,
 				06269A302255359C00D7E48B /* DeviceTypeCheck.swift */,
 			);
 			path = Checks;
@@ -250,13 +247,12 @@
 				06269A172255353100D7E48B /* CollectionVC.swift in Sources */,
 				06269A332255359C00D7E48B /* DeviceTypeCheck.swift in Sources */,
 				06269A272255356D00D7E48B /* Present&Reload.swift in Sources */,
-				06269A322255359C00D7E48B /* Portrait||Landscape.swift in Sources */,
 				06269A0E2255351400D7E48B /* StringMethods.swift in Sources */,
 				06269A082255349200D7E48B /* Lifecycle.swift in Sources */,
 				06269A2A2255356D00D7E48B /* ZIndex.swift in Sources */,
 				06269A252255356D00D7E48B /* NavBarSetup.swift in Sources */,
 				06269A0D2255351400D7E48B /* CustomCell.swift in Sources */,
-				06269A072255349200D7E48B /* LaunchOrientation.swift in Sources */,
+				06269A072255349200D7E48B /* Orientation.swift in Sources */,
 				06269A262255356D00D7E48B /* Reload.swift in Sources */,
 				06269A292255356D00D7E48B /* Attributes.swift in Sources */,
 				06C1B8852255C48600B13C36 /* CellSizingModes.swift in Sources */,
