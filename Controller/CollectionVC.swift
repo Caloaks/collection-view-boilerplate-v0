@@ -3,10 +3,9 @@
 
 import UIKit
 
-class CollectionVC: UICollectionViewController {            //let maxBetweenRowsAndCols = max(downcastLayout!.rows, downcastLayout!.cols)
-    var navBarTitle: String = String("")
-    var colourIndex: Int = Int()
+class CollectionVC: UICollectionViewController {
     var downcastLayout : CCVFlowLayout?
+    var navBarTitle: String = String("");   var colourIndex: Int = Int()
     
     init(headerTitle: String, colourIndex: Int, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(collectionViewLayout: layout)
@@ -46,6 +45,7 @@ class CollectionVC: UICollectionViewController {            //let maxBetweenRows
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCell.reuseIdentifier, for: indexPath) as! CustomCell
         cell.titleLabel.text = "\(indexPath.section),\(indexPath.item)"
+        
         setCellColours(cell: cell, indexPath: indexPath)
         //print(indexPath)
         return cell

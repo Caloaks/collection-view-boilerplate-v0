@@ -14,7 +14,7 @@ import UIKit
         window?.makeKeyAndVisible()
         
         modelName = UIDevice.modelName
-        getOrientationAtLaunch()                                                ; print("launching on \(modelName), in \(launchOrientation) orientation")
+        getOrientationAtLaunch()                                            ; print("launching on \(modelName), in \(launchOrientation) orientation")
         
         statusBar = UIApplication.shared.value(forKey: "statusBar") as! UIView
         if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
@@ -38,7 +38,7 @@ import UIKit
         window?.rootViewController = navController                          //; print("VCs*: \(String(describing: nav Controller?.viewControllers))")
         
         DispatchQueue.main.asyncAfter(deadline: .now()) {
-            viewControllerOne.setupAndPresent(vc: viewControllerOne)//just need SOME uiviewcontroller to call this func., even if it's not in navController
+            viewControllerOne.setupAndPresent(vc: viewControllerOne)        // just need a uiviewcontroller (any of them) to call this func.
         }
         
         return true
