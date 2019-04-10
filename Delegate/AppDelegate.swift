@@ -13,8 +13,8 @@ import UIKit
         window?.backgroundColor = navyBlue
         window?.makeKeyAndVisible()
         
-        modelName = UIDevice.modelName; print("launching on \(modelName)")
-        getOrientationAtLaunch()
+        modelName = UIDevice.modelName
+        getOrientationAtLaunch()                                                ; print("launching on \(modelName), in \(launchOrientation) orientation")
         
         statusBar = UIApplication.shared.value(forKey: "statusBar") as! UIView
         if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {

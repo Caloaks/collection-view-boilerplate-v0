@@ -23,7 +23,6 @@ extension AppDelegate {
             lastStatusBarHeight = 99
         }
         currentOrientation = launchOrientation; previousOrientation = launchOrientation
-        print("launched in \(launchOrientation)")
     }
 }
 
