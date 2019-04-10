@@ -1,6 +1,5 @@
 //  CollectionVC.swift
-//  The 'Ultimate' Collection View Boilerplate
-//  Created by Garth Snyder on 2019-02-07.  //  Copyright © 2019 Garth Snyder. All rights reserved. 
+//  The 'Ultimate' Collection View Boilerplate  ∙  1st commit Apr. 03, 2019  ∙  Created by Garth Snyder a.k.a. gladiusKatana ⚔️
 
 import UIKit
 
@@ -32,13 +31,13 @@ class CollectionVC: UICollectionViewController {            //let maxBetweenRows
         collectionView.bounces = false
         setupNotificationForStatusBarHeightChange()
         setTopViewController()
-        print(substringWithAppends(input: navBarTitle, preceding: "\nview ", following:  " loaded"))
+        print(substringWithAppends(input: navBarTitle, preceding: "\n💾view ", following:  " loaded"))
     }
     
     override func viewDidAppear(_ animated: Bool) {
         setTopViewController()
         if rePresentedVCFromButton {
-            print(substringWithAppends(input: navBarTitle, preceding: "\nview ", following:  " appeared"))
+            print(substringWithAppends(input: navBarTitle, preceding: "\n🏞view ", following:  " appeared"))
         }
         setupViewTitle(titleText: navBarTitle, numLines: 1, alignment: .left)
         setupNavBarButtons(graySeven, atIndex: colourIndex)
@@ -48,7 +47,7 @@ class CollectionVC: UICollectionViewController {            //let maxBetweenRows
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCell.reuseIdentifier, for: indexPath) as! CustomCell
         cell.titleLabel.text = "\(indexPath.section),\(indexPath.item)"
         setCellColours(cell: cell, indexPath: indexPath)
-//        print(indexPath)
+        //print(indexPath)
         return cell
     }
 }

@@ -1,7 +1,6 @@
- /*  Description.swift
- //  The 'Ultimate' Collection View Boilerplate
- //  Created by Garth Snyder on 2019-02-07.  //  Copyright © 2019 Garth Snyder. All rights reserved.
- 
+//  Description.swift
+//  The 'Ultimate' Collection View Boilerplate  ∙  1st commit Apr. 03, 2019  ∙  Created by Garth Snyder a.k.a. gladiusKatana ⚔️
+/*
   
                                                                                      < ◉ > __________________
                           //\/\\/\/\//\/\/\//\/\/\//\/\//\/\//\// \// \//\\//\/ /\/ (       ''"'''"'''""''''"'

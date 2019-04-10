@@ -1,6 +1,5 @@
 //  Layout.swift
-//  The 'Ultimate' Collection View Boilerplate
-//  Created by Garth Snyder on 2019-02-07.  //  Copyright © 2019 Garth Snyder. All rights reserved.
+//  The 'Ultimate' Collection View Boilerplate  ∙  1st commit Apr. 03, 2019  ∙  Created by Garth Snyder a.k.a. gladiusKatana ⚔️
 
 import UIKit
 
@@ -40,8 +39,8 @@ class CCVFlowLayout : UICollectionViewFlowLayout {// stands for "Custom Collecti
             
         else {print("error with cell width and/or height initialization  cell width \(String(describing: cellWidth))  cell height \(String(describing: cellHeight))\n")} // this should never be executed
         
-//        print(cellDimensionsMode.simpleDescription())
-//        print(squareCellMode.simpleDescription())
+        //print(cellDimensionsMode.simpleDescription())
+        //print(squareCellMode.simpleDescription())
         
         calculateSizes()
         self.cellWidth = cellWd;   self.cellHeight = cellHt
