@@ -77,10 +77,10 @@
 				06269A192255354500D7E48B /* Description.swift */,
 				06269A34225535C400D7E48B /* Vars.swift */,
 				06269A032255349200D7E48B /* Delegate */,
-				06269A1B2255356C00D7E48B /* Controller(Navigation) */,
-				06269A0F2255353100D7E48B /* Controller */,
-				06269A1F2255356D00D7E48B /* View */,
 				06269A0A2255351400D7E48B /* Model */,
+				06269A1F2255356D00D7E48B /* View */,
+				06269A0F2255353100D7E48B /* Controller */,
+				06269A1B2255356C00D7E48B /* Controller(Navigation) */,
 				06269A2D2255359C00D7E48B /* Checks */,
 				062699F02255340E00D7E48B /* UltimateCVBoilerplate */,
 				062699EF2255340E00D7E48B /* Products */,
@@ -118,8 +118,8 @@
 		06269A0A2255351400D7E48B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				06269A0B2255351400D7E48B /* CustomCell.swift */,
 				06269A0C2255351400D7E48B /* StringMethods.swift */,
+				06269A0B2255351400D7E48B /* CustomCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
