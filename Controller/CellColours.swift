@@ -17,7 +17,7 @@ extension CollectionVC {
         //row = indexPath.section; column = indexPath.item
         //}
         
-        cell.titleLabel.textColor = .white //platinumMedium
+        cell.titleLabel.textColor = platinum
         
         if row < customLayout.lockedHeaderRows || column < customLayout.lockedHeaderSections {
             cell.backgroundColor = headerColour
