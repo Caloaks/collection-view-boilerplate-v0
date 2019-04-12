@@ -38,7 +38,7 @@ class CollectionVC: UICollectionViewController {
         if rePresentedVCFromButton {
             print(substringWithAppends(input: navBarTitle, preceding: "\n🏞view ", following:  " appeared"))
         }
-        setupViewTitle(titleText: navBarTitle, numLines: 1, alignment: .left)
+        setupViewTitle(navBarTitle, numLines: 1, alignment: .left)
         setupNavBarButtons(graySeven, atIndex: colourIndex)
     }
     
