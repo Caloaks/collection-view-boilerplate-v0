@@ -71,6 +71,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		061025622260E6780004F464 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				06269A232255356D00D7E48B /* Layout.swift */,
+				06269A242255356D00D7E48B /* Prepare.swift */,
+				06C1B8842255C48600B13C36 /* CellSizeModes.swift */,
+				06269A212255356D00D7E48B /* Attributes.swift */,
+				06269A222255356D00D7E48B /* ZIndex.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		062699E52255340E00D7E48B = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +91,7 @@
 				06269A032255349200D7E48B /* Delegate */,
 				06269A0A2255351400D7E48B /* Model */,
 				06269A1F2255356D00D7E48B /* View */,
+				061025622260E6780004F464 /* ViewModel */,
 				06269A0F2255353100D7E48B /* Controller */,
 				06269A1B2255356C00D7E48B /* Controller(Navigation) */,
 				06269A2D2255359C00D7E48B /* Checks */,
@@ -128,7 +141,6 @@
 			children = (
 				06269A122255353100D7E48B /* CollectionVC.swift */,
 				06269A102255353100D7E48B /* CellColours.swift */,
-				06269A112255353100D7E48B /* SetTopVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -136,6 +148,7 @@
 		06269A1B2255356C00D7E48B /* Controller(Navigation) */ = {
 			isa = PBXGroup;
 			children = (
+				06269A112255353100D7E48B /* SetTopVC.swift */,
 				06269A1C2255356C00D7E48B /* NavBarSetup.swift */,
 				06269A1D2255356C00D7E48B /* Reload.swift */,
 				06269A1E2255356C00D7E48B /* Present&Reload.swift */,
@@ -146,11 +159,6 @@
 		06269A1F2255356D00D7E48B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				06269A232255356D00D7E48B /* Layout.swift */,
-				06269A242255356D00D7E48B /* Prepare.swift */,
-				06C1B8842255C48600B13C36 /* CellSizeModes.swift */,
-				06269A212255356D00D7E48B /* Attributes.swift */,
-				06269A222255356D00D7E48B /* ZIndex.swift */,
 				06269A202255356D00D7E48B /* Colours.swift */,
 			);
 			path = View;
