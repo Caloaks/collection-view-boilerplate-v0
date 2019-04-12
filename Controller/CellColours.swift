@@ -10,7 +10,7 @@ extension CollectionVC {
         var row = 0; var column = 0
         let customLayout = downcastLayout!
         
-        //if !customLayout.loadsHorizontal {            // keep lines 14 & 16-19 commented if you want cell colour pattern to vary *with the rows*
+        //if !customLayout.loadsHorizontally {            // keep lines 14 & 16-19 commented if you want cell colour pattern to vary *with the rows*
         row = indexPath.item; column = indexPath.section
         //}
         //else {

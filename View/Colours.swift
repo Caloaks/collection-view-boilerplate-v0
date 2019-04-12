@@ -21,10 +21,10 @@ var platinum = UIColor.COOOKIE(214, g: 214, b: 214, a: 1)
 
 
 var skyBackgroundImage = UIImage(named: "skyB")?.withRenderingMode(.alwaysOriginal)
-var skyBackgroundImageColour = UIColor(patternImage: skyBackgroundImage!)
+var skyBackgroundImageColour = UIColor(patternImage: skyBackgroundImage!)            //may use
 
 
-var randomColours = [UIColor.red.cgColor, UIColor.orange.cgColor, UIColor.yellow.cgColor, UIColor.green.cgColor, UIColor.blue.cgColor, UIColor.purple.cgColor, UIColor.white.cgColor]
+var randomColours = [UIColor.red.cgColor, UIColor.orange.cgColor, UIColor.yellow.cgColor, UIColor.green.cgColor, UIColor.blue.cgColor, UIColor.purple.cgColor, UIColor.white.cgColor]                                   // used in TestSquare.swift
 
 
 
