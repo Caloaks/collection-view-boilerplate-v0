@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06102567226102D40004F464 /* Selecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06102566226102D40004F464 /* Selecting.swift */; };
 		062699F92255341100D7E48B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062699F82255341100D7E48B /* Assets.xcassets */; };
 		062699FC2255341100D7E48B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062699FA2255341100D7E48B /* LaunchScreen.storyboard */; };
 		06269A072255349200D7E48B /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06269A042255349200D7E48B /* Orientation.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06102566226102D40004F464 /* Selecting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selecting.swift; sourceTree = "<group>"; };
 		062699EE2255340E00D7E48B /* UltimateCVBoilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimateCVBoilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		062699F82255341100D7E48B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		062699FB2255341100D7E48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				06269A122255353100D7E48B /* CollectionVC.swift */,
 				06269A102255353100D7E48B /* CellColours.swift */,
+				06102566226102D40004F464 /* Selecting.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			files = (
 				06269A092255349200D7E48B /* AppDelegate.swift in Sources */,
 				06269A2C2255356D00D7E48B /* Prepare.swift in Sources */,
+				06102567226102D40004F464 /* Selecting.swift in Sources */,
 				06269A2B2255356D00D7E48B /* Layout.swift in Sources */,
 				06269A282255356D00D7E48B /* Colours.swift in Sources */,
 				06269A162255353100D7E48B /* SetTopVC.swift in Sources */,
