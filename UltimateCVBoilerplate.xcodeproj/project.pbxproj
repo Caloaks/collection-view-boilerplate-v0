@@ -85,6 +85,16 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		06102568226104FD0004F464 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				06269A122255353100D7E48B /* CollectionVC.swift */,
+				06269A102255353100D7E48B /* CellColours.swift */,
+				06102566226102D40004F464 /* Selecting.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		062699E52255340E00D7E48B = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +105,6 @@
 				06269A1F2255356D00D7E48B /* View */,
 				061025622260E6780004F464 /* ViewModel */,
 				06269A0F2255353100D7E48B /* Controller */,
-				06269A1B2255356C00D7E48B /* Controller(Navigation) */,
 				06269A2D2255359C00D7E48B /* Checks */,
 				062699F02255340E00D7E48B /* UltimateCVBoilerplate */,
 				062699EF2255340E00D7E48B /* Products */,
@@ -141,14 +150,13 @@
 		06269A0F2255353100D7E48B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				06269A122255353100D7E48B /* CollectionVC.swift */,
-				06269A102255353100D7E48B /* CellColours.swift */,
-				06102566226102D40004F464 /* Selecting.swift */,
+				06102568226104FD0004F464 /* VC */,
+				06269A1B2255356C00D7E48B /* Navigation */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		06269A1B2255356C00D7E48B /* Controller(Navigation) */ = {
+		06269A1B2255356C00D7E48B /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
 				06269A112255353100D7E48B /* SetTopVC.swift */,
@@ -156,7 +164,7 @@
 				06269A1D2255356C00D7E48B /* Reload.swift */,
 				06269A1E2255356C00D7E48B /* Present&Reload.swift */,
 			);
-			path = "Controller(Navigation)";
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		06269A1F2255356D00D7E48B /* View */ = {
