@@ -3,8 +3,8 @@
  
         ______________________________________
        | □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ |    |
-       | □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ |    |
        | ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ |    |
+       | □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ |    |
        | ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ |    |
        | □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ |  ⃝ |
        | ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ ■ □ |    |
@@ -25,13 +25,15 @@
  
  
  
-                                                It's designed to:
  
  
- □■  Save developers effort (**) setting up views, especially custom layouts (depending on the application, these can be tricky.)
+                                                Goals
  
- □■  Make collection views look, to the developer, more like a simple data structure (like a dictionary)
-     rather than the awkward, fragile creatures they often are. (***)
+ 
+ □■  To save you development time setting up views, especially custom UICollectionViewFlowLayouts (depending on the application, they can be tricky.)
+ 
+ □■  To make collection views look, to the developer(**), more like a simple data structure (like a dictionary)
+     than the awkward, fragile creatures they often are. (***)
  
  
  
@@ -48,30 +50,31 @@
 
  
  
-
  
+                                                             /|/         /|/
+                                                            { \}        { /}
+                                                           {/\\}       {/\\}           ______________
+                                               "rather than{/\/\}v/\/\{/\/\}//// ( ◉ ) ▽▽▾▿▿▾▽▽▿▽▽▿▽▾        /
+                                           the awkward,\\\|\/\\//\\/\/\/\\/\/ \/\                              --   RAAAR !
+                                        fragile creatures \//v/\/\/\/\/\//\///\///\____⧍▲⧍▵⧍_▵▵▴_▵▴▵       \
+                                       they often/////\\/\/{\/\\/\/ /\\/{/\/\}
+                                       are"\//\/          {/\/\}\      {/\\}
+                                       \\/\/\//             {/\\}       {/\}
+                                       \|\/\/\               {/ }        {| }
+                                        \\/\/\                /||\         \\\
+                                         \/\//
+                                           \/\\
+                                            \/ \
+                                             |||
+                                             //
+                                             /
  
-                                                                            ( ◉ )______________
-                                  "rather than ///\/{   }//\v\/\//v/\\//\/\/      ▽▽▾▿▿▾▽▽▿▽▽▿▽▾
-                                the awkward,   \|\/\\//\\/\/\/\\/\/ \/\\//v \/\\
-                            fragile creatures  \//v/\/\ \/\/\//\//\///\//\/\/\\ _⧍⧍▵⧍_▲▵▵▴_▵▴▵
-                          they often are" //\//\/ {  \/ / \/\/ \\/\\      }
-                            //\\\//\//             {     }          (    }
-                                                    {    )           {   )
-                                                    {   }             \||\
-                                                     /||\
- 
- 
- 
- 
-
- 
-
 
 
  
  
                         Coming Updates
+ 
   
 
     [Performance]
@@ -83,7 +86,7 @@
  
     [UI]
   
-    cell cornerRadius init parameter
+    cell cornerRadius & layer border init parameters
  
  
  
@@ -96,6 +99,6 @@
  
 
 
-//A mini-app you can download and run, and extend for your iOS projects.  Built on flexible custom layout & view controller classes, that cover most ways you'd probably want a collection view to behave ⚔️
+
 
 

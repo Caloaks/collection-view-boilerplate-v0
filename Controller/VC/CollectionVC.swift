@@ -47,7 +47,9 @@ class CollectionVC: UICollectionViewController {
         cell.titleLabel.text = "\(indexPath.section),\(indexPath.item)"
         
         setCellColours(cell: cell, indexPath: indexPath)
-        //print(indexPath)
+        
+        print(indexPath)
+        
         return cell
     }
 }

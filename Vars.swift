@@ -7,20 +7,24 @@ var globalKeyWindow = UIApplication.shared.keyWindow!
 
 var navController: UINavigationController? = UINavigationController()
 
-var cellGap = CGFloat(0)        // if nonzero, do NOT make this smaller than: 0.5 (iphone7), or else lines drawn inconsistently
-var testNum = 24                // only for testing, in the below vars
+var cellGap = CGFloat(0)          // if nonzero, do NOT make this smaller than: 0.5 (iphone7), or else lines drawn inconsistently
+//var testNum = 24                // only for testing, in the below vars (may not be used on any given commit)
 
 
 //--------------------------------------------------------------------------------------------
 var vcLayoutOne = CCVFlowLayout(rows: 24, cols: 12, lockedHeaderRows: 1, lockedHeaderSections: 1,
-                                cellWidth: nil, cellHeight: nil, hSpace: cellGap, vSpace: cellGap,
-                                loadsHorizontally: false,                     // note, if loadsHorizontally is true, 'rows' look like columns
-                                squareCellMode: .noAutoSquare)
+                                cellWidth: nil, cellHeight: nil,
+                                autoFitWScale: 0.95, autoFitHScale: 0.95,  //* auto-fit scale factors ignored if width/height non-nil
+                                hSpace: cellGap, vSpace: cellGap,        //* if auto-fit scale factors are nil, value of 1.0 substituted
+                                loadsHorizontally: false,                // * if loadsHorizontally is true, 'rows' look like columns
+                                squareCellMode: .noAutoSquare)           // * why no autocomplete for enum cases?
 
 var vcLayoutTwo = CCVFlowLayout(rows: 8, cols: 24, lockedHeaderRows: 1, lockedHeaderSections: 1,
-                                cellWidth: 100, cellHeight: 80, hSpace: cellGap, vSpace: cellGap,
+                                cellWidth: 100, cellHeight: 80,
+                                autoFitWScale: 0.8, autoFitHScale: 0.8,
+                                hSpace: cellGap, vSpace: cellGap,
                                 loadsHorizontally: false,
-                                squareCellMode: .noAutoSquare) // * why no autocomplete for enum cases?
+                                squareCellMode: .noAutoSquare)
 
 var viewControllerOne = CollectionVC(headerTitle: "Collection View 1", colourIndex: 0, collectionViewLayout: vcLayoutOne)
 var viewControllerTwo = CollectionVC(headerTitle: "Collection View 2", colourIndex: 1, collectionViewLayout: vcLayoutTwo)
