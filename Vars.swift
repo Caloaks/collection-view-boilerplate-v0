@@ -28,11 +28,11 @@ var cellGap = CGFloat(0)          // if nonzero, do NOT make this smaller than: 
 
 
 var vcLayoutOne = CCVFlowLayout(rows: 7, cols: 7, lockedHeaderRows: 0, lockedHeaderSections: 1,      //from the calendar project
-                               cellWidth: nil, cellHeight: nil,
-                               autoFitWScale: nil, autoFitHScale: nil,       //* auto-fit scale factors ignored if width/height non-nil
-                               hSpace: cellGap, vSpace: cellGap,             //* if auto-fit scale factors are nil, value of 1.0 substituted
-                               loadsHorizontally: true,       //* ❗️ if loadsHorizontally is true, 'rows' look like columns
-                               squareCellMode: .noAutoSquare) //* why no autocomplete for enum cases?
+                                cellWidth: nil, cellHeight: nil,
+                                autoFitWScale: nil, autoFitHScale: nil,       //* auto-fit scale factors ignored if width/height non-nil
+                                hSpace: cellGap, vSpace: cellGap,             //* if auto-fit scale factors are nil, value of 1.0 substituted
+                                loadsHorizontally: true,       //* ❗️ if loadsHorizontally is true, 'rows' look like columns
+                                squareCellMode: .noAutoSquare) //* why no autocomplete for enum cases?
 
 var vcLayoutTwo = CCVFlowLayout(rows: 4, cols: 3, lockedHeaderRows: 0, lockedHeaderSections: 0,    //from the calendar project
                                  cellWidth: nil, cellHeight: nil,
