@@ -39,7 +39,7 @@ class CollectionVC: UICollectionViewController {
             print(substringWithAppends(input: navBarTitle, preceding: "\n🏞view ", following:  " appeared"))
         }
         setupViewTitle(navBarTitle, numLines: 1, alignment: .left)
-        setupNavBarButtons(graySeven, atIndex: colourIndex)
+        setupNavBarButtons(grayTwo, atIndex: colourIndex)
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

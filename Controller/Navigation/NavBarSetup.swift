@@ -18,14 +18,14 @@ extension CollectionVC {
     
     func setupNavBarButtons(_ withCustomColour: UIColor?, atIndex: Int?) {
         let navSelectorForVCOne = #selector(buttonWrapperMethodforVCOne)
-        let navSelectorForVCTwo = #selector(ButtonWrapperMethodforVCTwo)
+        let navSelectorForVCTwo = #selector(buttonWrapperMethodforVCTwo)
         let navSelectorForReloading = #selector(reloadCollectionView)
         let buttonOne = setupButton(selector: navSelectorForVCOne, title: "timetableImage")
         let buttonTwo = setupButton(selector: navSelectorForVCTwo, title: "calendarImage")
         let reloadButton = setupButton(selector: navSelectorForReloading, title: "reloadButton")
         navigationItem.rightBarButtonItems = [buttonTwo, buttonOne, reloadButton]
         
-        var barButtonColours = [grayTwo, grayTwo, .clear]
+        var barButtonColours = [graySeven, graySeven, .clear]
         
         for button in navigationItem.rightBarButtonItems! {
             if let index = navigationItem.rightBarButtonItems?.firstIndex(of: button) {
@@ -46,7 +46,7 @@ extension CollectionVC {
     }
     
     @objc func buttonWrapperMethodforVCOne() {presentViaVCButton(vc: viewControllerOne)}
-    @objc func ButtonWrapperMethodforVCTwo() {presentViaVCButton(vc: viewControllerTwo)}
+    @objc func buttonWrapperMethodforVCTwo() {presentViaVCButton(vc: viewControllerTwo)}
     
     func presentViaVCButton(vc: CollectionVC) {
         rePresentedVCFromButton = true

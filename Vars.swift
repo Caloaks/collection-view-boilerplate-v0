@@ -41,8 +41,8 @@ var vcLayoutTwo = CCVFlowLayout(rows: 4, cols: 3, lockedHeaderRows: 0, lockedHea
                                  loadsHorizontally: false,
                                  squareCellMode: .noAutoSquare)
 
-var viewControllerOne = CollectionVC(headerTitle: "Collection View 1", colourIndex: 0, collectionViewLayout: vcLayoutOne)
-var viewControllerTwo = CollectionVC(headerTitle: "Collection View 2", colourIndex: 1, collectionViewLayout: vcLayoutTwo)
+var viewControllerOne = CollectionVC(headerTitle: "Collection View 1", colourIndex: 1, collectionViewLayout: vcLayoutOne)
+var viewControllerTwo = CollectionVC(headerTitle: "Collection View 2", colourIndex: 0, collectionViewLayout: vcLayoutTwo)
 //--------------------------------------------------------------------------------------------
 
 
