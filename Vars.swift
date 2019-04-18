@@ -41,12 +41,12 @@ var vcLayoutTwo = CCVFlowLayout(rows: 4, cols: 3, lockedHeaderRows: 0, lockedHea
                                  loadsHorizontally: false,
                                  squareCellMode: .noAutoSquare)
 
-var viewControllerOne = CollectionVC(headerTitle: "Collection View 1", colourIndex: 1, collectionViewLayout: vcLayoutOne)
-var viewControllerTwo = CollectionVC(headerTitle: "Collection View 2", colourIndex: 0, collectionViewLayout: vcLayoutTwo)
+var viewControllerOne = CollectionVC(navBarTitle: "Collection View 1", colourIndex: 1, collectionViewLayout: vcLayoutOne)
+var viewControllerTwo = CollectionVC(navBarTitle: "Collection View 2", colourIndex: 0, collectionViewLayout: vcLayoutTwo)
 //--------------------------------------------------------------------------------------------
 
 
-var currentTopVC : CollectionVC = CollectionVC(headerTitle: "temporary value to satisfy init", colourIndex: 0, collectionViewLayout: vcLayoutOne)
+var currentTopVC : CollectionVC = CollectionVC(navBarTitle: "temporary value to satisfy init", colourIndex: 0, collectionViewLayout: vcLayoutOne)
 var backgroundVC = UIViewController()
 
 var statusBar = UIView();           var navbarTitleLabel = UILabel();       var testRectanglelayer = CAShapeLayer()
